@@ -1,0 +1,14 @@
+* {
+	padding-top: 80px;
+	margin-top: 80px;
+}
+
+Gallery-container {
+	max-width: 1170px;
+	max-height: 1330px;
+}
+
+Gallery-image {
+	max-width: 1140px;
+	max-height: 1140px;
+}

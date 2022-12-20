@@ -1,0 +1,25 @@
+* {
+	background-color: gray;
+	margin-top: 60px;
+	padding-top: 60px;
+}
+
+.form {
+	margin-top: 15px;
+}
+
+.textarea {
+	padding: 20px;
+	display: flex;
+	height: 5px;
+	vertical-align: bottom
+}
+
+.Avatar-img {
+	padding: 4%;
+	width: 30%;
+	height: 30%;
+	vertical-align: middle;
+	object-fit: cover;
+	border-radius: 50%;
+}
