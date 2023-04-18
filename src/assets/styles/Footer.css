@@ -1,7 +1,6 @@
-* {
+.page-footer{
 	background-color: gray;
-	height: 250px;
-	z-index: +1;
+	height: 60px;
+	max-width: 1884px;
+	font-size: large;
 }
-
-Footer-social {}
