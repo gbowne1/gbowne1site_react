@@ -1,83 +1,9 @@
-.Navbar {
-	background-color: #8da8ff;
-	border-bottom: 1px solid #ddd;
-	display: flex;
-	justify-content: space-between;
-	padding: 20px;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index: 999;
-  }
-  
-  .container {
-	display: flex;
-	align-items: center;
-	margin-right: auto;
-  }
-  .Navbar-link {
-	color: #050505; /* change to your preferred color */
-	text-decoration: none;
-  }
-  .Navbar-link:hover {
-	color: #dad6d6; /* change to your preferred color */
-  }
-  
-  .Navbar-header {
-	display: flex;
-	align-items: center;
-  }
-  
-  .Navbar-logo {
-	height: 50px;
-	width: 50px;
-	margin-right: 10px;
-  }
-  
-  .Navbar-brand {
-	font-size: 1.5rem;
-	font-weight: bold;
-	text-decoration: none;
-	color: #333;
-  }
-  
-  .containerSmall {
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	/* margin-left: 600px; */
-  }
-  
-  ul {
-	display: flex;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	justify-content: flex-end;
-	align-items: center;
-  }
-  
-  li {
-	margin-left: 10px;
-  }
-  
-  .MuiButton-root {
-	text-transform: none;
-	font-weight: bold;
-  }
-  
-  .MuiTextField-root {
-	margin-right: 10px;
-  }
-  
-  .MuiSvgIcon-root {
-	color: #333;
-  }
-  
-  .MuiAvatar-root {
-	height: 30px;
-	width: 30px;
-	margin-left: 10px;
-  }
-  
+/* * {
+	background-color: #4169e1;
+	height: 60px;
+	max-width: 1884px;
+}
+
+.Navbar-header {}
+
+.Navbar-brand {} */
