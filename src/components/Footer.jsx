@@ -12,6 +12,7 @@ class Footer extends React.Component {
 	render() {
 		return (
 			<div className="container-fluid text-center page-footer font-small blue pt-4 py-3">
+			<h2>This is the footer section.</h2>
 				<p className="Footer-social">
 					<a
 						href="https://www.youtube.com/gbowne1"
