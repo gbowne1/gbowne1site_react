@@ -1,0 +1,49 @@
+.About-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 80px;
+}
+
+.About-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+  margin: 2rem 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.About-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.About-header h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.About-header h5 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.About-header img {
+  width: 30%;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+.About-header p {
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
