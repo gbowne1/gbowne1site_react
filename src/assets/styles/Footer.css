@@ -1,6 +1,46 @@
-.page-footer{
-	background-color: gray;
-	height: 60px;
-	max-width: 1884px;
-	font-size: large;
-}
+.page-footer {
+	background-color: #f8f9fa;
+	padding: 20px;
+	font-size: 14px;
+	color: #777;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .social {
+	margin: 0 10px;
+	color: #777;
+	transition: all 0.3s ease;
+  }
+  
+  .social:hover {
+	color: #007bff;
+  }
+  
+  .youtube:hover {
+	color: #ff0000;
+  }
+  
+  .facebook:hover {
+	color: #3b5998;
+  }
+  
+  .instagram:hover {
+	color: #c13584;
+  }
+  
+  .twitter:hover {
+	color: #1da1f2;
+  }
+  
+  @media screen and (max-width: 768px) {
+	.page-footer {
+	  flex-direction: column;
+	  text-align: center;
+	}
+	
+	.social {
+	  margin: 10px;
+	}
+  }
+  
