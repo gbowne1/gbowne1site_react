@@ -19,7 +19,6 @@ export default class App extends Component {
 				<div className="container-fluid">
 					<Router>
 					<Header />
-					<NavBar/>
 						<Routes>
 							<Route index path='/' element={<Home />} />
 							<Route exact path='/about' element={<About />} />
