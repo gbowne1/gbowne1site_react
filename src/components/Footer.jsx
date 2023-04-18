@@ -11,7 +11,7 @@ import {
 class Footer extends React.Component {
 	render() {
 		return (
-			<footer className="container-fluid text-center page-footer font-small blue pt-4 py-3">
+			<div className="container-fluid text-center page-footer font-small blue pt-4 py-3">
 				<p className="Footer-social">
 					<a
 						href="https://www.youtube.com/gbowne1"
@@ -38,7 +38,7 @@ class Footer extends React.Component {
 						<FontAwesomeIcon icon={faTwitter} size="2x" />
 					</a>
 				</p>
-			</footer>
+			</div>
 		);
 	}
 }
