@@ -13,25 +13,25 @@ import Portfolio from "./components/Portfolio";
 import NotFound from "./components/NotFound";
 
 export default class App extends Component {
-	render() {
-		return (
-			<div className="App">
-				<div className="container-fluid">
-					<Router>
-					<Header />
-					<NavBar/>
-						<Routes>
-							<Route index path='/' element={<Home />} />
-							<Route exact path='/about' element={<About />} />
-							<Route exact path='/blog' element={<Blog />} />
-							<Route exact path='/contact' element={<Contact />} />
-							<Route exact path='/portfolio' element={<Portfolio />} />
-							<Route path="*" element={<NotFound />} />
-						</Routes>
-						<Footer />
-					</Router>
-				</div>
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="App">
+        <div className="container-fluid">
+          <Router>
+            <Header />
+            <NavBar />
+            <Routes>
+              <Route index path="/" element={<Home />} />
+              <Route exact path="/about" element={<About />} />
+              <Route exact path="/blog" element={<Blog />} />
+              <Route exact path="/contact" element={<Contact />} />
+              <Route exact path="/portfolio" element={<Portfolio />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </Router>
+        </div>
+      </div>
+    );
+  }
 }
