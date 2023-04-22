@@ -3,8 +3,16 @@
 	padding: 20px;
 	font-size: 14px;
 	color: #777;
-	display: flex;
 	justify-content: center;
+    padding-bottom: 20px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+  }
+  .copyright{
+	padding-bottom: 20px !important;
+	color: black;
+	font-size: large;
   }
   
   .social {
@@ -17,31 +25,31 @@
 	color: #007bff;
   }
   
-  .youtube:hover {
+  .youtube{
 	color: #ff0000;
   }
   
-  .facebook:hover {
+  .facebook{
 	color: #3b5998;
   }
   
-  .instagram:hover {
+  .instagram{
 	color: #c13584;
   }
   
-  .twitter:hover {
+  .twitter{
 	color: #1da1f2;
   }
-  .linkedin:hover {
+  .linkedin{
 	color: #1518cf;
   }
-  .github:hover{
+  .github{
 	color:black;
   }
-  .reddit:hover{
+  .reddit{
 	color:#ff4500;
   }
-  .twitch:hover{
+  .twitch{
 	color:#9147ff;
   }
   @media screen and (max-width: 768px) {
@@ -49,7 +57,6 @@
 	  flex-direction: column;
 	  text-align: center;
 	}
-	
 	.social {
 	  margin: 10px;
 	}
