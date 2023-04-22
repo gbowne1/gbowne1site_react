@@ -26,6 +26,7 @@ export default class App extends Component {
               <Route exact path="/blog" element={<Blog />} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/portfolio" element={<Portfolio />} />
+			  <Route exact path="/blog" element={<Blog />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

@@ -16,6 +16,7 @@ export default function Blog() {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
 
+
   useEffect(() => {
     // Fetch blogs from local JSON server
     fetch('http://localhost:3000/blog')
@@ -24,17 +25,40 @@ export default function Blog() {
       .catch(error => console.log(error));
   }, []);
 
-  // Get current posts based on pagination
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = blogs.slice(indexOfFirstPost, indexOfLastPost);
+  //pagination
+  const itemsPerPage = 5;
+  const totalPages = 10;
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentBlogData = blogData.slice(startIndex, endIndex);
+  const maxPages = 5; // Maximum number of pages to display
+  const halfMaxPages = Math.floor(maxPages / 2);
 
-  // Change page
-  const handlePageChange = (event, value) => {
-    setCurrentPage(value);
-    navigate(`/blog/page/\${value}`);
-  };
+  let startPage = 1;
+  let endPage = totalPages;
 
+  if (totalPages > maxPages) {
+    if (currentPage <= halfMaxPages) {
+      endPage = maxPages;
+    } else if (currentPage >= totalPages - halfMaxPages) {
+      startPage = totalPages - maxPages + 1;
+    } else {
+      startPage = currentPage - halfMaxPages;
+      endPage = currentPage + halfMaxPages;
+    }
+  }
+  const paginationLinks = [];
+  for (let i = startPage; i <= endPage; i++) {
+    paginationLinks.push(
+      <button
+        key={i}
+        onClick={() => setCurrentPage(i)}
+        className={i === currentPage ? "active" : ""}
+      >
+        {i}
+      </button>
+    );
+  }
   // Handle form submission for comments
   const handleSubmit = event => {
     event.preventDefault();
@@ -81,6 +105,23 @@ export default function Blog() {
       <Box display="flex" justifyContent="center">
         <Pagination count={Math.ceil(blogs.length / postsPerPage)} page={currentPage} onChange={handlePageChange} />
       </Box>
+      <div className="pagination-links">
+        <button
+          className="prev"
+          disabled={currentPage === 1}
+          onClick={() => setCurrentPage(currentPage - 1)}
+        >
+          Prev
+        </button>
+        {paginationLinks}
+        <button
+          className="next"
+          disabled={currentPage === totalPages}
+          onClick={() => setCurrentPage(currentPage + 1)}
+        >
+          Next
+        </button>
+      </div>
     </Box>
   );
 }
