@@ -12,3 +12,51 @@ Gallery-image {
 	max-width: 1140px;
 	max-height: 1140px;
 } */
+.Gallery-container {
+	/* display: flex; */
+	/* flex-direction: column; */
+	align-items: center;
+	margin-top: 100px;
+	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.Gallery-container {
+		width: 90%;
+	}
+}
+
+  
+  .Gallery-header {
+	text-align: center;
+  }
+  
+  .Gallery-title {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+  }
+  
+  .Gallery-image {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+  }
+  .Gallery-slider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.Gallery-caption {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+}
+.Gallery-description {
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}
+  

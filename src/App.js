@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import Blog from "./components/Blog";
 import Portfolio from "./components/Portfolio";
 import NotFound from "./components/NotFound";
+import Gallery from "./components/Gallery";
 
 export default class App extends Component {
 	render() {
@@ -26,6 +27,7 @@ export default class App extends Component {
 							<Route exact path='/blog' element={<Blog />} />
 							<Route exact path='/contact' element={<Contact />} />
 							<Route exact path='/portfolio' element={<Portfolio />} />
+							<Route exact path='/gallery' element={<Gallery />} />
 							<Route path="*" element={<NotFound />} />
 						</Routes>
 						<Footer />
