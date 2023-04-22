@@ -3,6 +3,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Box, Button, IconButton, Pagination, Typography, TextField, Breadcrumbs } from '@mui/material';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ThumbDownIcon from '@mui/icons-material/ThumbDown';
+import '../assets/styles/Blog.css';
 
 export default function Blog() {
   const location = useLocation();
@@ -56,11 +57,11 @@ export default function Blog() {
             <IconButton color="primary" onClick={() => setLikes(likes + 1)}>
               <ThumbUpIcon />
             </IconButton>
-            <Typography>{likes}</Typography>
-            <IconButton color="primary" onClick={() => setDislikes(dislikes + 1)}>
+            <Typography variant="body2">{likes}</Typography>
+            <IconButton aria-label="dislike" color="primary" onClick={() => setDislikes(dislikes + 1)}>
               <ThumbDownIcon />
             </IconButton>
-            <Typography>{dislikes}</Typography>
+            <Typography variant="body2">{dislikes}</Typography>
           </Box>
           <form onSubmit={handleSubmit}>
             <TextField
