@@ -14,6 +14,7 @@ import NotFound from "./components/NotFound";
 import Gallery from "./components/Gallery";
 
 export default class App extends Component {
+
 	render() {
 		return (
 			<div className="App">
