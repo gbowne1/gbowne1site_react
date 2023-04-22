@@ -32,7 +32,18 @@
   .twitter:hover {
 	color: #1da1f2;
   }
-  
+  .linkedin:hover {
+	color: #1518cf;
+  }
+  .github:hover{
+	color:black;
+  }
+  .reddit:hover{
+	color:#ff4500;
+  }
+  .twitch:hover{
+	color:#9147ff;
+  }
   @media screen and (max-width: 768px) {
 	.page-footer {
 	  flex-direction: column;
