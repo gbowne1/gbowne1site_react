@@ -6,6 +6,10 @@ import {
 	faFacebook,
 	faTwitter,
 	faInstagram,
+	faLinkedin,
+	faGithub,
+	faReddit,
+	faTwitch
 } from "@fortawesome/free-brands-svg-icons";
 
 class Footer extends React.Component {
@@ -27,16 +31,40 @@ class Footer extends React.Component {
 						<FontAwesomeIcon icon={faFacebook} size="2x" />
 					</a>
 					<a
-						href="http://www.instagram.com/larnbuildteach"
+						href="https://www.instagram.com/gbowne1/"
 						className="instagram social"
 					>
 						<FontAwesomeIcon icon={faInstagram} size="2x" />
 					</a>
 					<a
-						href="https://wwww.twitter.com"
+						href="https://twitter.com/gbowne1"
 						className="twitter social"
 					>
 						<FontAwesomeIcon icon={faTwitter} size="2x" />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/gregory-bowne-47886591/"
+						className="linkedin social"
+					>
+						<FontAwesomeIcon icon={faLinkedin} size="2x" />
+					</a>
+					<a
+						href="https://github.com/gbowne1"
+						className="github social"
+					>
+						<FontAwesomeIcon icon={faGithub} size="2x" />
+					</a>
+					<a
+						href="https://www.reddit.com/user/gbowne1"
+						className="reddit social"
+					>
+						<FontAwesomeIcon icon={faReddit} size="2x" />
+					</a>
+					<a
+						href="https://www.twitch.tv/gbowne1"
+						className="twitch social"
+					>
+						<FontAwesomeIcon icon={faTwitch} size="2x" />
 					</a>
 				</p>
 			</div>
