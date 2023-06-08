@@ -1,68 +1,68 @@
 {
-	"name": "gbowne1site_react",
-	"version": "0.0.1",
-	"description": "gbowne1 site made with React 18",
-	"keywords": [
-		"react",
-		"starter",
-		"template"
-	],
-	"main": "src/index.js",
-	"dependencies": {
-		"@emotion/react": "^11.10.5",
-		"@emotion/styled": "^11.10.5",
-		"@fortawesome/free-brands-svg-icons": "^6.2.1",
-		"@fortawesome/react-fontawesome": "^0.2.0",
-		"@mui/base": "^5.0.0-alpha.110",
-		"@mui/icons-material": "^5.11.0",
-		"@mui/material": "^5.11.0",
-		"@mui/styled-engine": "^5.11.0",
-		"@mui/system": "^5.11.0",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"axios": "1.2.1",
-		"prop-types": "15.8.1",
-		"react": "18.2.0",
-		"react-bootstrap": "2.7.0",
-		"react-cookie-consent": "^8.0.1",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "6.5.0",
-		"react-scripts": "5.0.1",
-		"react-slick": "^0.29.0",
-		"styled-components": "5.3.6"
-	},
-	"devDependencies": {
-		"@babel/core": "^7.20.5",
-		"@babel/parser": "^7.20.5",
-		"@babel/preset-env": "^7.20.2",
-		"@babel/preset-react": "^7.18.6",
-		"@babel/runtime": "^7.20.6",
-		"eslint": "^8.39.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"typescript": "4.9.4"
-	},
-	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
-		"eject": "react-scripts eject",
-		"lint": "npx eslint src test",
-		"lint:fix": "npm run lint -- --fix",
-		"prettier": "npx prettier src test --check",
-		"prettier:fix": "npm run prettier -- --write",
-		"format": "npm run prettier:fix && npm run lint:fix"
-	},
-	"browserslist": {
-		"production": [
-			">9%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 2 chrome version",
-			"last 2 firefox version",
-			"last 2 safari version"
-		]
-	}
+  "name": "gbowne1site_react",
+  "version": "0.0.1",
+  "description": "gbowne1 site made with React 18",
+  "keywords": [
+    "react",
+    "starter",
+    "template"
+  ],
+  "main": "src/index.js",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/base": "^5.0.0-alpha.110",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.0",
+    "@mui/styled-engine": "^5.11.0",
+    "@mui/system": "^5.11.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "axios": "1.2.1",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-bootstrap": "2.7.0",
+    "react-cookie-consent": "^8.0.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "6.5.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "styled-components": "5.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/parser": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.20.6",
+    "eslint": "^8.39.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "typescript": "4.9.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:debug": "react-scripts --inspect-brk test --runInBand --no-cache",
+    "eject": "react-scripts eject",
+    "lint": "npx eslint src test",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write",
+    "format": "npm run prettier:fix && npm run lint:fix"
+  },
+  "browserslist": {
+    "production": [
+      ">9%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  }
 }

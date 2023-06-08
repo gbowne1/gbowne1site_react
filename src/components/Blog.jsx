@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
-import { Box, Button, IconButton, Pagination, Typography, TextField, Breadcrumbs } from '@mui/material';
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
-import ThumbDownIcon from '@mui/icons-material/ThumbDown';
-import '../assets/styles/Blog.css';
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
+import {
+  Box,
+  Button,
+  IconButton,
+  Pagination,
+  Typography,
+  TextField,
+  Breadcrumbs,
+} from "@mui/material";
+import ThumbUpIcon from "@mui/icons-material/ThumbUp";
+import ThumbDownIcon from "@mui/icons-material/ThumbDown";
+import "../assets/styles/Blog.css";
 
 export default function Blog() {
   const location = useLocation();
@@ -12,17 +20,16 @@ export default function Blog() {
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [postsPerPage, setPostsPerPage] = useState(5);
-  const [comment, setComment] = useState('');
+  const [comment, setComment] = useState("");
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
 
-
   useEffect(() => {
     // Fetch blogs from local JSON server
-    fetch('http://localhost:3000/blog')
-      .then(response => response.json())
-      .then(data => setBlogs(data))
-      .catch(error => console.log(error));
+    fetch("http://localhost:3000/blog")
+      .then((response) => response.json())
+      .then((data) => setBlogs(data))
+      .catch((error) => console.log(error));
   }, []);
 
   //pagination
@@ -60,10 +67,10 @@ export default function Blog() {
     );
   }
   // Handle form submission for comments
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     console.log(comment);
-    setComment('');
+    setComment("");
   };
 
   return (
@@ -73,16 +80,22 @@ export default function Blog() {
         <Typography color="textPrimary">Blog</Typography>
         <Typography color="textPrimary">{slug}</Typography>
       </Breadcrumbs>
-      {currentPosts.map(blog => (
+      {currentPosts.map((blog) => (
         <Box key={blog.id} my={4}>
-          <Typography variant="h4" gutterBottom>{blog.title}</Typography>
+          <Typography variant="h4" gutterBottom>
+            {blog.title}
+          </Typography>
           <Typography variant="body1">{blog.body}</Typography>
           <Box display="flex" alignItems="center" mt={2}>
             <IconButton color="primary" onClick={() => setLikes(likes + 1)}>
               <ThumbUpIcon />
             </IconButton>
             <Typography variant="body2">{likes}</Typography>
-            <IconButton aria-label="dislike" color="primary" onClick={() => setDislikes(dislikes + 1)}>
+            <IconButton
+              aria-label="dislike"
+              color="primary"
+              onClick={() => setDislikes(dislikes + 1)}
+            >
               <ThumbDownIcon />
             </IconButton>
             <Typography variant="body2">{dislikes}</Typography>
@@ -92,18 +105,24 @@ export default function Blog() {
               id="comment"
               name="comment"
               value={comment}
-              onChange={event => setComment(event.target.value)}
+              onChange={(event) => setComment(event.target.value)}
               label="Leave a comment"
               variant="outlined"
               fullWidth
               margin="normal"
             />
-            <Button variant="contained" color="primary" type="submit">Submit</Button>
+            <Button variant="contained" color="primary" type="submit">
+              Submit
+            </Button>
           </form>
         </Box>
       ))}
       <Box display="flex" justifyContent="center">
-        <Pagination count={Math.ceil(blogs.length / postsPerPage)} page={currentPage} onChange={handlePageChange} />
+        <Pagination
+          count={Math.ceil(blogs.length / postsPerPage)}
+          page={currentPage}
+          onChange={handlePageChange}
+        />
       </Box>
       <div className="pagination-links">
         <button

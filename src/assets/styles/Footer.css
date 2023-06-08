@@ -1,64 +1,63 @@
 .page-footer {
-	background-color: #f8f9fa;
-	padding: 20px;
-	font-size: 14px;
-	color: #777;
-	justify-content: center;
-    padding-bottom: 20px;
-    position:fixed;
-    bottom:0;
-    width:100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.copyright {
+  padding-bottom: 20px !important;
+  color: black;
+  font-size: large;
+}
+
+.social {
+  margin: 0 10px;
+  color: #777;
+  transition: all 0.3s ease;
+}
+
+.social:hover {
+  color: #007bff;
+}
+
+.youtube {
+  color: #ff0000;
+}
+
+.facebook {
+  color: #3b5998;
+}
+
+.instagram {
+  color: #c13584;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+.linkedin {
+  color: #1518cf;
+}
+.github {
+  color: black;
+}
+.reddit {
+  color: #ff4500;
+}
+.twitch {
+  color: #9147ff;
+}
+@media screen and (max-width: 768px) {
+  .page-footer {
+    flex-direction: column;
+    text-align: center;
   }
-  .copyright{
-	padding-bottom: 20px !important;
-	color: black;
-	font-size: large;
-  }
-  
   .social {
-	margin: 0 10px;
-	color: #777;
-	transition: all 0.3s ease;
+    margin: 10px;
   }
-  
-  .social:hover {
-	color: #007bff;
-  }
-  
-  .youtube{
-	color: #ff0000;
-  }
-  
-  .facebook{
-	color: #3b5998;
-  }
-  
-  .instagram{
-	color: #c13584;
-  }
-  
-  .twitter{
-	color: #1da1f2;
-  }
-  .linkedin{
-	color: #1518cf;
-  }
-  .github{
-	color:black;
-  }
-  .reddit{
-	color:#ff4500;
-  }
-  .twitch{
-	color:#9147ff;
-  }
-  @media screen and (max-width: 768px) {
-	.page-footer {
-	  flex-direction: column;
-	  text-align: center;
-	}
-	.social {
-	  margin: 10px;
-	}
-  }
-  
+}

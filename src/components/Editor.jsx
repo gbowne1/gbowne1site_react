@@ -1,17 +1,30 @@
-import { useState } from 'react';
-import { Box, TextField, Button } from '@mui/material';
-import { Save, FormatBold, FormatItalic, FormatUnderlined, StrikethroughS, Code, FormatQuote, Link, FormatListBulleted, FormatListNumbered, FormatIndentIncrease, FormatIndentDecrease } from '@mui/icons-material';
+import { useState } from "react";
+import { Box, TextField, Button } from "@mui/material";
+import {
+  Save,
+  FormatBold,
+  FormatItalic,
+  FormatUnderlined,
+  StrikethroughS,
+  Code,
+  FormatQuote,
+  Link,
+  FormatListBulleted,
+  FormatListNumbered,
+  FormatIndentIncrease,
+  FormatIndentDecrease,
+} from "@mui/icons-material";
 
 function BlogEditor() {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
 
   const handleSave = () => {
     // Save the blog post
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+    <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
       <TextField
         label="Title"
         value={title}
@@ -24,7 +37,7 @@ function BlogEditor() {
         value={content}
         onChange={(event) => setContent(event.target.value)}
       />
-      <Box sx={{ display: 'flex', gap: 1 }}>
+      <Box sx={{ display: "flex", gap: 1 }}>
         <Button variant="outlined" startIcon={<FormatBold />}>
           Bold
         </Button>

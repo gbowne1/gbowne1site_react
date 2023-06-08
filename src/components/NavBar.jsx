@@ -14,10 +14,7 @@ class NavBar extends React.Component {
       <nav className="Navbar">
         <div className="container container-fluid">
           <div className="Navbar-header">
-            <img
-              className="Navbar-logo"
-              src={logo}
-            ></img>
+            <img className="Navbar-logo" src={logo}></img>
             <a className="Navbar-brand" href="#">
               Greg Bowne
             </a>
@@ -26,7 +23,7 @@ class NavBar extends React.Component {
             <ul className="">
               <li>
                 <Link to="/">
-                  <Button  className="Navbar-link">Home</Button>
+                  <Button className="Navbar-link">Home</Button>
                 </Link>
               </li>
               <li>
@@ -45,17 +42,17 @@ class NavBar extends React.Component {
                 </Link>
               </li>
               <li>
-                <Link to="/contact" >
+                <Link to="/contact">
                   <Button className="Navbar-link">Contact</Button>
                 </Link>
               </li>
               <TextField
-                                name="search"
-                                floatingLabelText="Search"
-                                // value={this.state.query}
-                                // onChange={this.searchChange}
-                                floatingLabelFixed
-                            />
+                name="search"
+                floatingLabelText="Search"
+                // value={this.state.query}
+                // onChange={this.searchChange}
+                floatingLabelFixed
+              />
               <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
                 <SearchIcon />
               </IconButton>

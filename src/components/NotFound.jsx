@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles/NotFound.css";
-import notFound from "../assets/images/sitechecker-404.png"
+import notFound from "../assets/images/sitechecker-404.png";
 
 class NotFound extends React.Component {
   render() {
