@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import {
   Box,
   Button,
@@ -14,8 +14,6 @@ import ThumbDownIcon from "@mui/icons-material/ThumbDown";
 import "../assets/styles/Blog.css";
 
 export default function Blog() {
-  const location = useLocation();
-  const navigate = useNavigate();
   const { slug } = useParams();
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -32,12 +30,17 @@ export default function Blog() {
       .catch((error) => console.log(error));
   }, []);
 
+  // Handle page change in pagination
+  const handlePageChange = (event, page) => {
+    setCurrentPage(page);
+  };
+
   //pagination
-  const itemsPerPage = 5;
-  const totalPages = 10;
+  const itemsPerPage = postsPerPage;
+  const totalPages = Math.ceil(blogs.length / postsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
-  const currentBlogData = blogData.slice(startIndex, endIndex);
+  const currentBlogData = blogs.slice(startIndex, endIndex);
   const maxPages = 5; // Maximum number of pages to display
   const halfMaxPages = Math.floor(maxPages / 2);
 
@@ -80,7 +83,7 @@ export default function Blog() {
         <Typography color="textPrimary">Blog</Typography>
         <Typography color="textPrimary">{slug}</Typography>
       </Breadcrumbs>
-      {currentPosts.map((blog) => (
+      {currentBlogData.map((blog) => (
         <Box key={blog.id} my={4}>
           <Typography variant="h4" gutterBottom>
             {blog.title}
@@ -140,6 +143,14 @@ export default function Blog() {
         >
           Next
         </button>
+        <select
+          value={postsPerPage}
+          onChange={(event) => setPostsPerPage(Number(event.target.value))}
+        >
+          <option value={5}>5</option>
+          <option value={10}>10</option>
+          <option value={15}>15</option>
+        </select>
       </div>
     </Box>
   );

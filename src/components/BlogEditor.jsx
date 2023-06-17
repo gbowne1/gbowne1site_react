@@ -78,3 +78,5 @@ function BlogEditor() {
     </Box>
   );
 }
+
+export default BlogEditor;

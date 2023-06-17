@@ -22,3 +22,5 @@ class CookieBar extends React.Component {
     );
   }
 }
+
+export default CookieBar;

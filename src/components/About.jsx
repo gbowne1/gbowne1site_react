@@ -2,13 +2,6 @@ import React from "react";
 import "../assets/styles/About.css";
 import profilePic from "../assets/images/me.jpg";
 
-import { Card, CardHeader, CardContent, Paper } from "@mui/material";
-import TextField from "@mui/material/TextField";
-import Grid from "@mui/material/Grid";
-import InputLabel from "@mui/material/InputLabel";
-import Input from "@mui/material/Input";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
-
 class About extends React.Component {
   render() {
     return (

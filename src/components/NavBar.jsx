@@ -1,12 +1,11 @@
 import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../assets/styles/NavBar.css";
 import logo from "../assets/images/gkb_50x50.png";
 import Button from "@mui/material/Button";
 import SearchIcon from "@mui/icons-material/Search";
 import TextField from "@mui/material/TextField";
 import IconButton from "@mui/material/IconButton";
-import Avatar from "@mui/material/Avatar";
 
 class NavBar extends React.Component {
   render() {
