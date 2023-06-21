@@ -1,25 +1,34 @@
 {
-  "configurations": [
-    {
-      "type": "node",
-      "name": "vscode-jest-tests.v2",
-      "request": "launch",
-      "args": [
-        "test",
-        "--",
-        "test",
-        "--env=jsdom",
-        "--runInBand",
-        "--watchAll=false",
-        "--testNamePattern",
-        "${jest.testNamePattern}",
-        "--runTestsByPath",
-        "${jest.testFile}"
-      ],
-      "cwd": "./gbowne1site_react",
-      "console": "integratedTerminal",
-      "internalConsoleOptions": "neverOpen",
-      "runtimeExecutable": "npm"
-    }
-  ]
+	"configurations": [
+		{
+			"name": "Attach to Node.js",
+			"type": "node",
+			"request": "attach",
+			"address": "127.0.0.1",
+			"port": 9229,
+			"localRoot": "${workspaceFolder}",
+			"remoteRoot": "/path/to/your/project"
+		},
+		{
+			"type": "node",
+			"name": "vscode-jest-tests.v2",
+			"request": "launch",
+			"args": [
+				"test",
+				"--",
+				"test",
+				"--env=jsdom",
+				"--runInBand",
+				"--watchAll=false",
+				"--testNamePattern",
+				"${jest.testNamePattern}",
+				"--runTestsByPath",
+				"${jest.testFile}"
+			],
+			"cwd": "./gbowne1site_react",
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen",
+			"runtimeExecutable": "npm"
+		}
+	]
 }

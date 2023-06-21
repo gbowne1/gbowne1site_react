@@ -1,10 +1,9 @@
-
 img {
   margin-top: 0;
 }
 
 h2 {
-  font-family: 'Cedarville Cursive', cursive;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .gallery {
@@ -25,7 +24,7 @@ h2 {
   transition: 0.5s;
   transform: scale(0.8) rotate(-15deg);
   border-radius: 20px;
-} 
+}
 
 .full-img {
   width: 100%;
