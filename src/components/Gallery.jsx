@@ -1,49 +1,72 @@
-import React from "react";
-import Slider from "react-slick";
 import "../assets/styles/Gallery.css";
 import image1 from "../assets/images/seattle.jpg";
 import image2 from "../assets/images/me.jpg";
 import image3 from "../assets/images/coding_channels_resize_md.jpg";
+import { Card, Modal, Button } from 'react-bootstrap';
+import { useState } from "react";
 
-const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true,
-};
 
-class Gallery extends React.Component {
-  render() {
-    return (
-      <div className="Gallery-container">
-        <div className="Gallery-header">
-          <h3 className="Gallery-title">Gallery</h3>
-          <Slider {...settings}>
-            <div>
-              <img className="Gallery-image" src={image1} alt="Image 1" />
-              <p className="Gallery-description">
-                View of Seattle skyline from Kerry Park
-              </p>
-            </div>
-            <div>
-              <img className="Gallery-image" src={image2} alt="Image 2" />
-              <p className="Gallery-description">
-                Selfie taken during a hike in the Cascades
-              </p>
-            </div>
-            <div>
-              <img className="Gallery-image" src={image3} alt="Image 3" />
-              <p className="Gallery-description">
-                Coding on the couch with the best programming channels
-              </p>
-            </div>
-          </Slider>
-        </div>
-      </div>
-    );
+function Gallery() {
+  const [show, setShow] = useState(false);
+  const [image, setImage] = useState({
+    img: "",
+    text: ""
+  });
+  const handleClose = () => {
+    setShow(false);
   }
+  const handleShow = (img, text) => {
+    setShow(true);
+    setImage({ img: img, text: text });
+  };
+
+  const cardObj1 = {
+    img: image1,
+    text: "View of Seattle skyline from Kerry Park"
+  }
+  const cardObj2 = {
+    img: image2,
+    text: "Selfie taken during a hike in the Cascades"
+  }
+  const cardObj3 = {
+    img: image3,
+    text: "Coding on the couch with the best programming channels"
+  }
+  const images = [cardObj1, cardObj2, cardObj3];
+
+  return (
+    <div className="main-gallery">
+      {/* <NavBar/> */}
+      <h2 style={{ marginTop: "50px" }}>Gallery</h2>
+      <div className="gallery">
+        {
+          images.map((ele) => (
+            <div>
+              <Card style={{ width: '23rem' }} onClick={() => handleShow(ele.img, ele.text)}>
+                <Card.Img variant="top" src={ele.img} style={{ width: '100%', height: '300px', objectFit: 'cover' }} />
+                <Card.Body>
+                  <Card.Text style={{ color: "black" }}>
+                    {ele.text}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+              {
+                <Modal show={show} onHide={handleClose} centered size="lg">
+                  <img src={image.img} />
+                  <Modal.Title>{image.text}</Modal.Title>
+                  <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                      Close
+                    </Button>
+                  </Modal.Footer>
+                </Modal>
+              }
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  );
 }
 
 export default Gallery;
