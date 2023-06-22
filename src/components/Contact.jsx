@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import "../assets/styles/Contact.css";
 import { Card, CardHeader, CardContent, Paper } from "@mui/material"; // Importing Card and Paper
 import TextField from "@mui/material/TextField";
-import Grid from "@mui/material/Grid";
 import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
 import TextareaAutosize from "@mui/base/TextareaAutosize";
@@ -35,7 +34,7 @@ class Contact extends React.Component {
                 <option value="manufacturing">Manufacturing Services</option>
               </Select>
               <InputLabel htmlFor="message-input">Message</InputLabel>
-              <TextareaAutosize id="message-input" rowsMin={5} />
+              <TextareaAutosize id="message-input" />
               <TextField
                 id="outlined-basic"
                 label="Outlined"
@@ -63,16 +62,6 @@ class Contact extends React.Component {
             </form>
           </div>
         </div>
-        <Grid container spacing={3}>
-          {" "}
-          {/* Using the Grid component */}
-          <Grid item xs={12} sm={6}>
-            <Paper>xs=12 sm=6</Paper>
-          </Grid>
-          <Grid item xs={12} sm={6}>
-            <Paper>xs=12 sm=6</Paper>
-          </Grid>
-        </Grid>
         <Footer /> {/* Using the Footer component */}
       </div>
     );

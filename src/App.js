@@ -33,6 +33,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
           {showCookieBar && <CookieBar setShowCookieBar={setShowCookieBar} />}
+          <CookieBar />
           <Footer />
         </Router>
       </div>

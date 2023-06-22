@@ -9,7 +9,6 @@ class About extends React.Component {
         <div className="About-header">
           <h3 className="About-title">About Me</h3>
           <h2>About Me</h2>
-          <h5>Photo of me:</h5>
           <img src={profilePic}></img>
           <p>
             Hi there! my name is Gregory Bowne aka gbowne1. I am a 44 year old
