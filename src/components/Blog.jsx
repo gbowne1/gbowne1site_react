@@ -143,7 +143,11 @@ export default function Blog() {
         >
           Next
         </button>
+        <label className="sr-only" htmlFor="pagination control">
+          Pagination Control
+        </label>
         <select
+          id="pagination control"
           value={postsPerPage}
           onChange={(event) => setPostsPerPage(Number(event.target.value))}
         >

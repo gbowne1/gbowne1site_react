@@ -22,14 +22,17 @@ function Gallery() {
 
   const cardObj1 = {
     img: image1,
+    alt: "View of Seattle skyline from Kerry Park",
     text: "View of Seattle skyline from Kerry Park",
   };
   const cardObj2 = {
     img: image2,
+    alt: "Selfie of Gregory Bowne",
     text: "Selfie taken during a hike in the Cascades",
   };
   const cardObj3 = {
     img: image3,
+    alt: "code editor showing HTML code",
     text: "Coding on the couch with the best programming channels",
   };
   const images = [cardObj1, cardObj2, cardObj3];
@@ -46,6 +49,7 @@ function Gallery() {
               onClick={() => handleShow(ele.img, ele.text)}
             >
               <Card.Img
+                alt={ele.alt}
                 variant="top"
                 src={ele.img}
                 style={{ width: "100%", height: "300px", objectFit: "cover" }}

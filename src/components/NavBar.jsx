@@ -18,7 +18,7 @@ function NavBar() {
     <nav className="Navbar">
       <div className="container container-fluid">
         <div className="Navbar-header">
-          <img className="Navbar-logo" src={logo}></img>
+          <img alt="kb logo" className="Navbar-logo" src={logo}></img>
           <a className="Navbar-brand" href="#">
             Greg Bowne
           </a>
@@ -27,39 +27,51 @@ function NavBar() {
           <ul className="">
             <li>
               <Link to="/">
-                <Button className="Navbar-link">Home</Button>
+                <Button className="Navbar-link">
+                  <span className="Navbar-link-text">Home</span>
+                </Button>
               </Link>
             </li>
             <li>
               <Link to="/about">
-                <Button className="Navbar-link">About</Button>
+                <Button className="Navbar-link">
+                  <span className="Navbar-link-text">About</span>
+                </Button>
               </Link>
             </li>
             <li>
               <Link to="/gallery">
-                <Button className="Navbar-link">Gallery</Button>
+                <Button className="Navbar-link">
+                  <span className="Navbar-link-text">Gallery</span>
+                </Button>
               </Link>
             </li>
             <li>
               <Link to="/blog">
-                <Button className="Navbar-link">Blog</Button>
+                <Button className="Navbar-link">
+                  <span className="Navbar-link-text">Blog</span>
+                </Button>
               </Link>
             </li>
             <li>
               <Link to="/contact">
-                <Button className="Navbar-link">Contact</Button>
+                <Button className="Navbar-link">
+                  <span className="Navbar-link-text">Contact</span>
+                </Button>
               </Link>
             </li>
-            <TextField
-              name="search"
-              label="Search"
-              value={searchValue}
-              onChange={handleSearchChange}
-            />
-            <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
-              <SearchIcon />
-            </IconButton>
           </ul>
+          <TextField
+            name="search"
+            label="Search"
+            value={searchValue}
+            onChange={handleSearchChange}
+          />
+          <IconButton type="button" sx={{ p: "10px" }} aria-label="search">
+            <span className="Navbar-link-icon">
+              <SearchIcon />
+            </span>
+          </IconButton>
         </div>
       </div>
     </nav>

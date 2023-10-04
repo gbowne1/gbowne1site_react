@@ -1,64 +1,64 @@
 .page-footer {
-	background-color: #f8f9fa;
-	padding: 20px;
-	font-size: 14px;
-	color: #777;
-	justify-content: center;
-	padding-bottom: 20px;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+  background-color: #f8f9fa;
+  padding: 20px;
+  font-size: 14px;
+  color: #777;
+  justify-content: center;
+  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .copyright {
-	padding-bottom: 20px !important;
-	color: black;
-	font-size: large;
+  padding-bottom: 20px !important;
+  color: black;
+  font-size: large;
 }
 
 .social:hover .youtube {
-	color: #ff0000;
+  color: #ff0000;
 }
 
 .social:hover .facebook {
-	color: #3b5998;
+  color: #3b5998;
 }
 
 .social:hover .instagram {
-	color: #c13584;
+  color: #c13584;
 }
 
 .social:hover .twitter {
-	color: #1da1f2;
+  color: #1da1f2;
 }
 
 .social:hover .linkedin {
-	color: #1518cf;
+  color: #1518cf;
 }
 
 .social:hover .github {
-	color: black;
+  color: black;
 }
 
 .social:hover .reddit {
-	color: #ff4500;
+  color: #ff4500;
 }
 
 .social:hover .twitch {
-	color: #9147ff;
+  color: #9147ff;
 }
 
 .social:hover {
-	color: #007bff;
+  color: #007bff;
 }
 
 @media screen and (max-width: 768px) {
-	.page-footer {
-		flex-direction: column;
-		text-align: center;
-	}
+  .page-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 
-	.social {
-		margin: 10px;
-	}
+  .social {
+    margin: 10px;
+  }
 }
