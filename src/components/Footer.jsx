@@ -15,7 +15,7 @@ import {
 class Footer extends React.Component {
   render() {
     return (
-      <div className="container-fluid text-center page-footer font-small blue pt-4 py-3">
+      <footer className="container-fluid text-center page-footer font-small blue pt-4 py-3">
         <p className="copyright">
           copyright ©2023 by Greg Bowne || Seatle, WA USA
         </p>
@@ -77,7 +77,7 @@ class Footer extends React.Component {
             <FontAwesomeIcon icon={faTwitch} size="2x" />
           </a>
         </p>
-      </div>
+      </footer>
     );
   }
 }
