@@ -21,7 +21,11 @@ class Contact extends React.Component {
             Swing by for a cup of coffee, or leave me a message.
           </p>
           <div className="Contact-form-container">
-            <img className="Avatar-img" src={profilePic} />
+            <img
+              className="Avatar-img"
+              alt="Headshot of Gregory Bowne"
+              src={profilePic}
+            />
             <form className="Contact-form">
               <InputLabel htmlFor="name-input">Name</InputLabel>
               <Input id="name-input" />
