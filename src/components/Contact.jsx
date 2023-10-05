@@ -6,7 +6,7 @@ import { Card, CardHeader, CardContent, Paper } from "@mui/material"; // Importi
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import Input from "@mui/material/Input";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
+import TextareaAutosize from "@mui/material/TextareaAutosize";
 import Select from "@mui/material/Select";
 import profilePic from "../assets/images/me.jpg";
 
