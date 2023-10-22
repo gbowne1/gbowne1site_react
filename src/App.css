@@ -14,6 +14,10 @@
   padding: 0;
 }
 
+.app-route-container{
+  padding-left: 0px;
+}
+
 /* 1884 x 905 */
 @media screen and (min-width: 1884px) {
 }
