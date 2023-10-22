@@ -16,7 +16,7 @@ function NavBar() {
 
   return (
     <nav className="Navbar">
-      <div className="container container-fluid">
+      <div className="Navbar-container container-fluid">
         <div className="Navbar-header">
           <img alt="kb logo" className="Navbar-logo" src={logo}></img>
           <a className="Navbar-brand" href="#">

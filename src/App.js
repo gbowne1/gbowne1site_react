@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="container-fluid">
+      <div className="container-fluid app-route-container">
         <Router>
           <Header />
           <NavBar />
