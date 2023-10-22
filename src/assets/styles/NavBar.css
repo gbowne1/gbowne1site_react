@@ -3,7 +3,7 @@
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1rem;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -11,10 +11,15 @@
   z-index: 999;
 }
 
-.container {
+.Navbar-container  * {
+  background-color: unset;
+}
+
+.Navbar-container {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  background-color: unset;
+  padding: 0.3rem 2rem;
 }
 
 .Navbar-link {
