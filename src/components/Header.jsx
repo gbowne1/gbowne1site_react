@@ -3,7 +3,8 @@ import "../assets/styles/Header.css";
 
 class Header extends React.Component {
   render() {
-    return <header></header>;
+    return <header>
+ </header>;
   }
 }
 
