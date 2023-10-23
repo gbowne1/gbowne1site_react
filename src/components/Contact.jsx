@@ -66,7 +66,7 @@ class Contact extends React.Component {
             </form>
           </div>
         </div>
-        <Footer /> {/* Using the Footer component */}
+        {/* Using the Footer component */}
       </div>
     );
   }
