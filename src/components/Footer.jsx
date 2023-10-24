@@ -25,10 +25,7 @@ class Footer extends React.Component {
             aria-label="Visit gbowne1 youtube account"
             className="youtube social"
           >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              size="2x"
-            />
+            <FontAwesomeIcon icon={faYoutube} size="2x" />
           </a>
           <a
             href="https://www.facebook.com/gbowne1/"
