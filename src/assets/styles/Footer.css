@@ -1,54 +1,111 @@
+.page-footer > * {
+  background-color: initial;
+}
+
 .page-footer {
-  background-color: #f8f9fa;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #7788994d;
   font-size: 14px;
-  color: #777;
   justify-content: center;
-  padding-bottom: 20px;
+  position: fixed;
+  bottom: 0;
   width: 100%;
+  padding-left: 3rem;
+  align-items: center;
 }
 
 .copyright {
-  padding-bottom: 20px !important;
   color: black;
   font-size: large;
+  text-align: left;
 }
 
-.social:hover .youtube {
+.Footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.Footer-social a,
+.Footer-social svg {
+  background-color: transparent;
+}
+
+.youtube > svg path {
   color: #ff0000;
 }
 
-.social:hover .facebook {
+.youtube:focus-visible {
+  outline: 2px solid #ff0000;
+  border-radius: 4px;
+}
+
+.facebook > svg path {
   color: #3b5998;
 }
 
-.social:hover .instagram {
+.facebook:focus-visible {
+  outline: 2px solid #3b5998;
+  border-radius: 4px;
+}
+
+.instagram > svg path {
   color: #c13584;
 }
 
-.social:hover .twitter {
+.instagram:focus-visible {
+  outline: 2px solid #c13584;
+  border-radius: 4px;
+}
+
+.twitter > svg path {
   color: #1da1f2;
 }
 
-.social:hover .linkedin {
+.twitter:focus-visible {
+  outline: 2px solid #1da1f2;
+  border-radius: 4px;
+}
+
+.linkedin > svg path {
   color: #1518cf;
 }
 
-.social:hover .github {
+.linkedin:focus-visible {
+  outline: 2px solid #1518cf;
+  border-radius: 4px;
+}
+
+.github > svg path {
   color: black;
 }
 
-.social:hover .reddit {
+.github:focus-visible {
+  outline: 2px solid black;
+  border-radius: 4px;
+}
+
+.reddit > svg path {
   color: #ff4500;
 }
 
-.social:hover .twitch {
+.reddit:focus-visible {
+  outline: 2px solid #ff4500;
+  border-radius: 4px;
+}
+
+.twitch > svg path {
   color: #9147ff;
 }
 
-.social:hover {
-  color: #007bff;
+.twitch:focus-visible {
+  outline: 2px solid #9147ff;
+  border-radius: 4px;
 }
+
+/* .social:hover {
+  color: #007bff;
+} */
 
 @media screen and (max-width: 768px) {
   .page-footer {

@@ -19,7 +19,7 @@ class Footer extends React.Component {
         <p className="copyright">
           copyright ©2023 by Greg Bowne || Seatle, WA USA
         </p>
-        <p className="Footer-social">
+        <div className="Footer-social">
           <a
             href="https://www.youtube.com/gbowne1"
             aria-label="Visit gbowne1 youtube account"
@@ -76,7 +76,7 @@ class Footer extends React.Component {
           >
             <FontAwesomeIcon icon={faTwitch} size="2x" />
           </a>
-        </p>
+        </div>
       </footer>
     );
   }
