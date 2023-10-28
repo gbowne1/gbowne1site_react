@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  height: 103vh;
 }
+
 
 .Contact-header {
   display: flex;
@@ -73,4 +74,31 @@
 
 .Contact-form button:hover {
   background-color: #0069d9;
+}
+
+
+.Contact-info {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  /* width: 25%; */
+  /* max-width: px; */
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  margin-left: 90px;
+} 
+
+
+.Contact-info Card,
+.Contact-info Paper {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.Contact-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
 }
