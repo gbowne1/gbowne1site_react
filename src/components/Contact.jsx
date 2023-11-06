@@ -49,25 +49,25 @@ class Contact extends React.Component {
             </form>
           </div>
         </div>
-        <div class= "Contact-info">
+        <div className="Contact-info">
           <Card variant="outlined">
-          {" "}
-          {/* Using the Card component */}
-          <CardHeader title="Contact Information" />
-          <CardContent>
-            <p>Name: John Doe</p>
-            <p>Email: john.doe@example.com</p>
-            <p>Phone: 123-456-7890</p>
-          </CardContent>
-        </Card>
-        <br />
-        <Paper variant="outlined">
-          {" "}
-          {/* Using the Paper component */}
-          <p>Office Address:</p>
-          <p>123 Main St.</p>
-          <p>Anytown, USA 12345</p>
-        </Paper>
+            {" "}
+            {/* Using the Card component */}
+            <CardHeader title="Contact Information" />
+            <CardContent>
+              <p>Name: John Doe</p>
+              <p>Email: john.doe@example.com</p>
+              <p>Phone: 123-456-7890</p>
+            </CardContent>
+          </Card>
+          <br />
+          <Paper variant="outlined">
+            {" "}
+            {/* Using the Paper component */}
+            <p>Office Address:</p>
+            <p>123 Main St.</p>
+            <p>Anytown, USA 12345</p>
+          </Paper>
         </div>
         {/* Using the Footer component */}
       </div>

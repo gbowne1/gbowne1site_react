@@ -14,6 +14,7 @@ import {
   FormatIndentIncrease,
   FormatIndentDecrease,
 } from "@mui/icons-material";
+import "../assets/styles/Editor.css";
 
 function BlogEditor() {
   const [title, setTitle] = useState("");
