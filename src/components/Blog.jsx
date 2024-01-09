@@ -24,7 +24,7 @@ export default function Blog() {
 
   useEffect(() => {
     // Fetch blogs from local JSON server
-    fetch("http://localhost:3000/blog")
+    fetch("http://localhost:8000/blog")
       .then((response) => response.json())
       .then((data) => setBlogs(data))
       .catch((error) => console.log(error));
