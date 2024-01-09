@@ -25,3 +25,11 @@ My scope of my personal site will include:
 - education
 - work experience
 - a short bio or about me
+
+
+To run local json-server
+
+```
+json-server --watch db.json --port 8000
+```
+
