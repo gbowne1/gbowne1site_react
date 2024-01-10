@@ -16,9 +16,7 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="container-fluid text-center page-footer font-small blue pt-4 py-3">
-        <p className="copyright">
-          copyright ©2023 by Greg Bowne || Seatle, WA USA
-        </p>
+        <p className="copyright">Copyright ©2023 by Greg Bowne</p>
         <div className="Footer-social">
           <a
             href="https://www.youtube.com/gbowne1"

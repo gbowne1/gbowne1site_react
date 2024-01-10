@@ -36,6 +36,7 @@
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
 		"axios": "^1.2.1",
+		"json-server": "^1.0.0-alpha.16",
 		"prop-types": "^15.8.1",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.7.0",
