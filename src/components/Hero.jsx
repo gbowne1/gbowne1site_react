@@ -1,20 +1,18 @@
 import React from "react";
 import "../assets/styles/Hero.css";
 
-class Hero extends React.Component {
-  render() {
-    return (
-      <section className="Hero-section">
-        <div className="Hero" id="hero">
-          <div className="">
-            <div className="hero">
-              <div className="container"></div>
-            </div>
+const Hero = () => {
+  return (
+    <section className="Hero-section">
+      <div className="Hero" id="hero">
+        <div className="">
+          <div className="hero">
+            <div className="container"></div>
           </div>
         </div>
-      </section>
-    );
-  }
-}
+      </div>
+    </section>
+  );
+};
 
 export default Hero;
