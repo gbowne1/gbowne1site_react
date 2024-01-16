@@ -7,8 +7,8 @@ const About = () => {
       <header className="About-header">
         <h1>About Me</h1>
       </header>
-      <article className="container-col">
-        <div className="About-bio box">
+      <article className="container-item About-bio">
+        <div className="box">
           <img src={profilePic} alt="Headshot of Gregory Bowne" />
           <p>
             Hi there! my name is Gregory Bowne aka gbowne1. I am a 44 year old
@@ -21,8 +21,8 @@ const About = () => {
         </div>
       </article>
 
-      <article className="container-col">
-        <div className="About-businesses box">
+      <article className="container-item businesses">
+        <div className="box">
           <h3>Businesses</h3>
           <ul>
             <li>
@@ -36,8 +36,9 @@ const About = () => {
               </li>
           </ul>
         </div>
-
-        <div className="About-careers box">
+      </article>
+      <article className="container-item About-careers">
+        <div className="box">
           <h3>Careers / Jobs</h3>
           <ul>
             <li><strong>Workshop and Consulting:</strong><br />
@@ -72,8 +73,8 @@ const About = () => {
         </div>
       </article>
     
-      <article className="container-col">
-        <div className="About-hobbies box">
+      <article className="container-item About-hobbies">
+        <div className="box">
           <h3>Hobbies</h3>
           <ul>
             <li>
@@ -107,7 +108,9 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="About-computer-specs box">
+        </article>
+        <article className="container-item About-computer-specs">
+        <div className="box">
           <h3>Computer Specs</h3>
           <ul>
             <li><strong>Case:</strong> CoolerMaster HAF 932</li>
@@ -127,8 +130,8 @@ const About = () => {
           </ul>
         </div>
       </article>
-      <article className="container-col">
-        <div className="About-favorites box">
+      <article className="container-item About-favorites">
+        <div className="box">
           <h3>My Favorite Things</h3>
           {/* This is a placeholder list, you can change it to your favorite things */}
           <ul>
