@@ -1,33 +1,59 @@
 .About-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   padding: 2rem;
-  margin-top: 80px;
+  max-width: 1280px;
+  margin: 100px auto;
+  display: grid;
+  grid-gap: 1.2rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .About-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 800px;
-  padding: 2rem;
-  margin: 2rem 0;
-  background-color: #fff;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-.About-title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  grid-column: 1 / span 4;
 }
 
 .About-header h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.About-container p {
+  text-align: left;
+  font-size: 1rem;
+}
+
+.About-container .box {
+  padding: 10px 20px;
+  box-shadow: 
+    0 1px 5px rgba(0, 0, 0, 0.2),
+    0 1px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.About-container ul {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left; 
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.About-bio img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 150px;
+  margin: 0 auto 10px;
 }
 
 .About-header h5 {
