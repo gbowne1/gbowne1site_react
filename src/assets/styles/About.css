@@ -5,15 +5,40 @@
   display: grid;
   grid-gap: 1.2rem;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    "header header header header"
+    "bio business hobbie favorite"
+    "bio career computer-spec favorite";
 }
 
+
 .About-header {
-  grid-column: 1 / span 4;
+  grid-area: header;
 }
 
 .About-header h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+}
+
+.About-bio {
+  grid-area: bio;
+}
+
+.About-businesses {
+  grid-area: business;
+}
+
+.About-careers {
+  grid-area: career;
+}
+
+.About-computer-specs {
+  grid-area: computer-spec;
+}
+
+.About-favorites {
+  grid-area: favorite;
 }
 
 .container-col {
