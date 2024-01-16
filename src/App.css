@@ -39,6 +39,33 @@
 @media screen and (max-height: 768px) {
 }
 
+/* 1024 x 748 */
+@media screen and (max-width: 1024px) {
+  .About-container {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-areas: 
+      "header header"
+      "bio business"
+      "career hobbie"
+      "computer-spec favorite" !important;
+  }
+}
+
+/* 600 x 748 */
+@media screen and (max-width: 600px) {
+  .About-container {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 
+    "header"
+    "bio"
+    "business"
+    "career"
+    "hobbie"
+    "computer-spec"
+    "favorite" !important;
+  }
+}
+
 /* 375 x 667*/
 @media screen and (max-width: 375px) {
 }
