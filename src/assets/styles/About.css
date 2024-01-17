@@ -5,12 +5,11 @@
   display: grid;
   grid-gap: 1.2rem;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "header header header header"
     "bio business hobbie favorite"
     "bio career computer-spec favorite";
 }
-
 
 .About-header {
   grid-area: header;
@@ -54,9 +53,7 @@
 
 .About-container .box {
   padding: 10px 20px;
-  box-shadow: 
-    0 1px 5px rgba(0, 0, 0, 0.2),
-    0 1px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 1px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -66,7 +63,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  text-align: left; 
+  text-align: left;
   gap: 5px;
   padding: 0;
   margin: 0;

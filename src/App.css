@@ -43,7 +43,7 @@
 @media screen and (max-width: 1024px) {
   .About-container {
     grid-template-columns: repeat(2, 1fr) !important;
-    grid-template-areas: 
+    grid-template-areas:
       "header header"
       "bio business"
       "career hobbie"
@@ -55,14 +55,14 @@
 @media screen and (max-width: 600px) {
   .About-container {
     grid-template-columns: 1fr !important;
-    grid-template-areas: 
-    "header"
-    "bio"
-    "business"
-    "career"
-    "hobbie"
-    "computer-spec"
-    "favorite" !important;
+    grid-template-areas:
+      "header"
+      "bio"
+      "business"
+      "career"
+      "hobbie"
+      "computer-spec"
+      "favorite" !important;
   }
 }
 
