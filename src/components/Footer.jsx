@@ -45,7 +45,7 @@ const socialLinks = [
 const Footer = () => {
   return (
     <footer className="container-fluid text-center page-footer font-small blue pt-4 py-3">
-      <p className="copyright">Copyright © 2023 by Greg Bowne</p>
+      <p className="copyright">Copyright © 2024 by Greg Bowne</p>
       <div className="Footer-social">
         {socialLinks.map(({ platform, href, icon }, index) => (
           <a

@@ -1,7 +1,22 @@
-/* * {} */
 .Home-container {
-  height: 500px;
-}
-.Home-header {
-  font-size: larger;
-}
+	min-height: 100vh; /* Full viewport height */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+
+  .intro-section,
+  .blog-preview,
+  .call-to-action {
+	width: 80%; /* Centered content with some margin */
+	max-width: 1200px; /* Maximum width for larger screens */
+  }
+
+  @media (max-width: 600px) {
+   .intro-section,
+   .blog-preview,
+   .call-to-action {
+	  padding: 10px;
+	}
+  }

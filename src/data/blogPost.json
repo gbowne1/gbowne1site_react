@@ -1,0 +1,40 @@
+{
+	"id": 1,
+	"title": "Introduction to Modern Web Development",
+	"slug": "introduction-to-modern-web-development",
+	"author": {
+		"id": 1,
+		"name": "John Doe",
+		"email": "john.doe@example.com"
+	},
+	"category": {
+		"id": 1,
+		"name": "Tutorials",
+		"slug": "tutorials"
+	},
+	"tags": [
+		{
+			"id": 1,
+			"name": "HTML"
+		},
+		{
+			"id": 2,
+			"name": "CSS"
+		},
+		{
+			"id": 3,
+			"name": "JavaScript"
+		}
+	],
+	"date_published": "2023-04-01T00:00:00Z",
+	"excerpt": "A brief overview of modern web development techniques.",
+	"content": "<p>This is the full content of the blog post...</p>",
+	"comments": [
+		{
+			"id": 1,
+			"author": "Jane Smith",
+			"comment": "Great article I learned a lot.",
+			"date_posted": "2023-04-02T12:34:56Z"
+		}
+	]
+}
