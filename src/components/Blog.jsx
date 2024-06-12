@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import blogPostData from "../data/blogPost.json";
 import {
   Container,
   Typography,
@@ -11,13 +12,10 @@ import {
 import { Link } from "react-router-dom";
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([blogPostData]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/api/posts")
-      .then((response) => response.json())
-      .then((data) => setPosts(data))
-      .catch((error) => console.error("Error fetching posts:", error));
+    setPosts([blogPostData]);
   }, []);
 
   return (
