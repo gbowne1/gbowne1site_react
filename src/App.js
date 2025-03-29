@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
@@ -25,17 +24,16 @@ function App() {
           <Header />
           <NavBar />
           <Routes>
-            <Route index path="/" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
-            <Route exact path="/blog" element={<Blog />} />
-            <Route exact path="/blog/editor" element={<BlogEditor />} />
-            <Route exact path="/contact" element={<Contact />} />
-            <Route exact path="/portfolio" element={<Portfolio />} />
-            <Route exact path="/gallery" element={<Gallery />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/editor" element={<BlogEditor />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/gallery" element={<Gallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           {showCookieBar && <CookieBar setShowCookieBar={setShowCookieBar} />}
-          <CookieBar />
           <Footer />
         </Router>
       </div>
